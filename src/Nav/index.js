@@ -7,20 +7,21 @@ import {
     faCode,
     faCoffee,
     faPlusCircle,
+    faSkull,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {  } from "@fortawesome/fontawesom"; 
+// import {  } from "@fortawesome/fontawesome-svg-core"; 
 
-imp
+// imp
 
-import NavBar from './styles'
+import { NavBar } from './styles'
 
 const Nav = () => {
     return (
         <NavBar>
-            <FontAwesomeIcon icon = {faBolt} />
-            <FontAwesomeIcon icon = {faCode} />
-            <FontAwesomeIcon icon = {faBolt} />
+            <FontAwesomeIcon icon = {faSkull} className = 'icon' />
+            <FontAwesomeIcon icon = {faCode} className = 'icon' />
+            <FontAwesomeIcon icon = {faPlusCircle} className = 'icon' />
         </NavBar>
     )
 }

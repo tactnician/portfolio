@@ -1,12 +1,13 @@
 import React from 'react'
 import Nav from '../Nav'
+import { Main } from './styles'
 
-const index = () => {
+const App = () => {
     return (
-        <div>
+        <Main>
             <Nav />
-            <h1>It's Alive!</h1>
-        </div>
+            {/* <h1>It's Alive!</h1> */}
+        </Main>
         // <div class="ct" id="t1">
         //     <div class="ct" id="t2">
         //         <div class="ct" id="t3">
@@ -56,4 +57,4 @@ const index = () => {
     )
 }
 
-export default index
+export default App
