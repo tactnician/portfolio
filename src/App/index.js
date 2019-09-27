@@ -11,40 +11,41 @@ const App = () => {
     const [page, setPage] = useState(1)
 
 
-
+    
     switch(page){
         case 1 :
             return (
-                <>
-                <Nav />
-                <Home className = 'page' id='p1' />
-                </>
+                <Main>
+                    <Nav />
+                    <Home className = 'page' id='p1' />
+                </Main>
             )
         case 2 : 
             return (
-                <>
-                <Nav />
-                <Projects className = 'page' id='p3' />
-                </>
+                <Main>
+                    <Nav />
+                    <Projects className = 'page' id='p3' />
+                </Main>
             ) 
         case 3 : 
             return (
-                <>
-                <Nav />
-                <Resume className = 'page' id='p2' /> 
-                </>
+                <Main>
+                    <Nav />
+                    <Resume className = 'page' id='p2' /> 
+                </Main>
             )
         case 4 : 
             return (
-                <>
-                <Nav />
-                <Contact className = 'page' id='p4' />
-                </>
+                <Main>
+                    <Nav />
+                    <Contact className = 'page' id='p4' />
+                </Main>
             ) 
         default:
             return <Home className = 'page' id='p1' />
-            
+
     }
+    
 
     // return (
     //     <Main>
