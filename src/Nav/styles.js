@@ -2,7 +2,31 @@
 
 import styled from 'styled-components'
 
+let iconColor = '#fff'
+let backgColor = 'navy'
+
 export const NavBar = styled.nav`
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
+    width: 8vw;
+    height: 100vh;
+    background-color: ${backgColor};
+
+    .icon {
+        font-size: 32px;
+        display: flex;
+        align-items: space-between;
+        padding: 3vh;
+        color: ${iconColor};
+    }
+
+    .icon:hover {
+        opacity: 0.5;
+    }
+        
 `
 
 // export const NavBar = styled.nav`
