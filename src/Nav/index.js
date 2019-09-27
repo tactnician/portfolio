@@ -16,12 +16,13 @@ import {
 
 import { NavBar } from './styles'
 
-const Nav = () => {
+const Nav = props => {
     return (
         <NavBar>
-            <FontAwesomeIcon icon = {faSkull} className = 'icon' />
-            <FontAwesomeIcon icon = {faCode} className = 'icon' />
-            <FontAwesomeIcon icon = {faPlusCircle} className = 'icon' />
+            <FontAwesomeIcon icon = {faSkull} className = 'icon' onClick={ props => props.setPage(1) } />
+            <FontAwesomeIcon icon = {faCode} className = 'icon' onClick = { props => props.setPage() } /> 
+            <FontAwesomeIcon icon = {faPlusCircle} className = 'icon' onClick = { props => props.setPage() } />
+            <FontAwesomeIcon icon = {faCoffee} className = 'icon' onClick = { props => props.setPage() } />
         </NavBar>
     )
 }

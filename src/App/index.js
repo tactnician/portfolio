@@ -1,14 +1,70 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Nav from '../Nav'
 import { Main } from './styles'
+import Home from '../Home'
+import Projects from '../Projects'
+import Resume from '../Resume'
+import Contact from '../Contact'
 
 const App = () => {
-    return (
-        <Main>
-            <Nav />
-            {/* <h1>It's Alive!</h1> */}
-        </Main>
-        // <div class="ct" id="t1">
+
+    const [page, setPage] = useState(1)
+
+
+
+    switch(page){
+        case 1 :
+            return (
+                <>
+                <Nav />
+                <Home className = 'page' id='p1' />
+                </>
+            )
+        case 2 : 
+            return (
+                <>
+                <Nav />
+                <Projects className = 'page' id='p3' />
+                </>
+            ) 
+        case 3 : 
+            return (
+                <>
+                <Nav />
+                <Resume className = 'page' id='p2' /> 
+                </>
+            )
+        case 4 : 
+            return (
+                <>
+                <Nav />
+                <Contact className = 'page' id='p4' />
+                </>
+            ) 
+        default:
+            return <Home className = 'page' id='p1' />
+            
+    }
+
+    // return (
+    //     <Main>
+    //         <Nav id='menu'/>
+    //         <Home className = 'page' id='p1' />
+    //         <Resume className = 'page' id='p2' /> 
+    //         <Projects className = 'page' id='p3' /> 
+    //         <Contact className = 'page' id='p4' />      
+    //     </Main>
+        
+        
+
+    // )
+}
+
+export default App
+
+
+
+// <div class="ct" id="t1">
         //     <div class="ct" id="t2">
         //         <div class="ct" id="t3">
         //         <div class="ct" id="t4">
@@ -53,8 +109,3 @@ const App = () => {
         //     </div>
         //     </div>
 
-
-    )
-}
-
-export default App
