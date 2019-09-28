@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { 
     faBolt,
@@ -10,21 +12,46 @@ import {
     faSkull,
 } from "@fortawesome/free-solid-svg-icons";
 
-// import {  } from "@fortawesome/fontawesome-svg-core"; 
-
-// imp
+// import Context from "../App/context";
 
 import { NavBar } from './styles'
 
-const Nav = props => {
+
+
+const Nav = () => {
+
     return (
         <NavBar>
-            <FontAwesomeIcon icon = {faSkull} className = 'icon' onClick={ props => props.setPage(1) } />
-            <FontAwesomeIcon icon = {faCode} className = 'icon' onClick = { props => props.setPage() } /> 
-            <FontAwesomeIcon icon = {faPlusCircle} className = 'icon' onClick = { props => props.setPage() } />
-            <FontAwesomeIcon icon = {faCoffee} className = 'icon' onClick = { props => props.setPage() } />
+            <Link to= '/'>
+                <FontAwesomeIcon icon = {faSkull} className = 'icon' />
+            </Link>
+            <Link to= '/projects'>
+                <FontAwesomeIcon icon = {faCode} className = 'icon'  />
+            </Link>
+            <Link to= '/resume'>
+                <FontAwesomeIcon icon = {faPlusCircle} className = 'icon'  />
+            </Link>
+            <Link to= '/contact'>
+                <FontAwesomeIcon icon = {faCoffee} className = 'icon'  />
+            </Link>
+            {/* <Link to= '/'></Link> */}
         </NavBar>
     )
+
+    // const Context = useContext(GlobalContext)
+
+    // return (
+    //     <Context.Consumer>
+    //         {context => (
+                // <NavBar>
+                //     <FontAwesomeIcon icon = {faSkull} className = 'icon' onClick={ context.pageSet(1) } />
+                //     <FontAwesomeIcon icon = {faCode} className = 'icon' onClick = { context.pageSet(2) } /> 
+                //     <FontAwesomeIcon icon = {faPlusCircle} className = 'icon' onClick = { context.pageSet(3) } />
+                //     <FontAwesomeIcon icon = {faCoffee} className = 'icon' onClick = { context.pageSet(4) } />
+                // </NavBar>
+    //         )}
+    //     </Context.Consumer>
+    // )
 }
 
 export default Nav
