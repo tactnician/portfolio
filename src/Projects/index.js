@@ -1,10 +1,11 @@
 import React from 'react'
+import { Main } from "./styles";
 
 const Projects = () => {
     return (
-        <div>
-            <h3>Projects</h3>
-        </div>
+        <Main className = 'page' id = 'p2' >
+            <h2>Projects</h2>
+        </Main>
     )
 }
 

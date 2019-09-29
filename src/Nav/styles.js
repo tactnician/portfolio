@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 
 let iconColor = '#fff'
-let backgColor = 'navy'
+let backgColor = 'black'
 
 export const NavBar = styled.nav`
     display: flex;

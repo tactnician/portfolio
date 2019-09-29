@@ -3,7 +3,32 @@ import styled from 'styled-components'
 export const Main = styled.main`
     display: flex; 
     flex-direction: row; 
+    #p1 { background: darkslateblue; }
+    #p2 { background: tomato; }
+    #p3 { background: gold; }
+    #p4 { background: deeppink; }
+    #p5 { background: rebeccapurple; }
+
+    .page {
+        width: 92vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        overflow: hidden; 
+        position: absolute;
+        left: 8vw;
+
+        opacity: 1;
+        transition: opacity 5s;
+    }
     
+
+    #p2, #p3, #p4 {
+        left: 200vw;
+        transform: translateX(-192vw);
+    }
+
 `
 
 // export const Main = styled.main`
