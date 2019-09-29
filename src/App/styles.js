@@ -1,3 +1,4 @@
+
 import styled from 'styled-components'
 
 export const Main = styled.main`
@@ -24,11 +25,7 @@ export const Main = styled.main`
     }
     
 
-    #p2, #p3, #p4 {
-        left: 200vw;
-        transform: translateX(-192vw);
-    }
-
+    
 `
 
 // export const Main = styled.main`

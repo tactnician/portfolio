@@ -1,10 +1,11 @@
 import React from 'react'
+import { Main } from "./styles";
 
 const Resume = () => {
     return (
-        <div>
+        <Main className='page' id='p3' >
             <h3>Resume</h3>
-        </div>
+        </Main>
     )
 }
 

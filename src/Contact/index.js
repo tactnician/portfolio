@@ -1,10 +1,11 @@
 import React from 'react'
+import { Main } from "./styles";
 
 const Contact = () => {
     return (
-        <div>
+        <Main className='page' id='p4'>
             <h3>Contact</h3>
-        </div>
+        </Main>
     )
 }
 
