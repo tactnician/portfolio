@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -19,22 +19,37 @@ import { NavBar } from './styles'
 
 
 const Nav = () => {
+    const [state, setState] = useState({
+        setP1: false,
+        setP2: false,
+        setP3: false,
+        setP4: false
+    })
 
     return (
         <NavBar>
-            <Link to= '/'>
+            <Link to= '/' >
                 <FontAwesomeIcon icon = {faSkull} className = 'icon' />
             </Link>
-            <Link to= '/projects'>
+            
+            <Link
+                // onClick = {setState({...state, setP2: true})}
+                to= {{
+                    pathname: '/projects',
+                    state: { visable: true }
+                }} 
+            >
                 <FontAwesomeIcon icon = {faCode} className = 'icon'  />
             </Link>
+            
             <Link to= '/resume'>
-                <FontAwesomeIcon icon = {faPlusCircle} className = 'icon'  />
+                <FontAwesomeIcon icon = {faRocket} className = 'icon'  />
             </Link>
+            
             <Link to= '/contact'>
                 <FontAwesomeIcon icon = {faCoffee} className = 'icon'  />
             </Link>
-            {/* <Link to= '/'></Link> */}
+
         </NavBar>
     )
 

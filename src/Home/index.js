@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 // import { CSSTransition } from 'react-transition-group'
 
-import { Main } from "./styles";
+import { Main }  from "./styles";
 
 const Home = () => {
 
     return(
         <Main className = 'page' id = 'p1' >
-            <h2>Home</h2>
+            <h3>Home</h3>
         </Main>
     )
 

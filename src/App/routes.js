@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route } from "react-router-dom";
 
 // import Nav from '../Nav'
@@ -9,12 +9,22 @@ import Contact from '../Contact'
 
 
 const Routes = () => {
+    
     return (
         <>
-            <Route path='/'  component={Home} /> 
-            <Route path='/projects'  component={Projects} /> 
-            <Route path='/resume'  component={Resume} /> 
-            <Route path='/contact'  component={Contact} /> 
+            <Route path='/'
+                component={Home} 
+            /> 
+            <Route path='/projects'  
+                component={Projects} 
+            /> 
+            <Route path='/resume'  
+                component={Resume} 
+            /> 
+            <Route path='/contact'
+                component={Contact} 
+            />
+            
             {/* <Route path='/'  component={} />  */}
             {/* <Route path='/'  component={} />  */}
             {/* <Route path='/'  component={} />  */}
