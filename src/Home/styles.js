@@ -4,8 +4,60 @@ import styled from 'styled-components'
 
 export const Main = styled.main`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+`
+
+export const Headline = styled.div`
+    h1 {
+        color: white;
+        font-size: 5vw;
+        // text-transform: uppercase;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: 1.9em dotted #CE6093;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end;
+    }
+    
+    /* Typewriter */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    /* Cursor */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #CE6093 }
+    }
+`
+    
+export const Subtitle = styled.div`
+    p {
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: #6BC39A;
+        // text-transform: uppercase;
+        margin-top: 0px;
+        animation: pulse 7s;
+    }
+    
+    @keyframes pulse {
+        0% {
+        color: #7391CF;
+        }
+        100% {
+        color: #6BC39A;
+        }
+    }
 `
 export const Splash = styled.section`
 `
