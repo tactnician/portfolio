@@ -3,11 +3,12 @@ import React, { useState } from 'react'
 
 import { Main }  from "./styles";
 
+
 const Home = () => {
 
     return(
         <Main className = 'page' id = 'p1' >
-            <h3>Home</h3>
+            {/* <h3>Home</h3> */}
         </Main>
     )
 

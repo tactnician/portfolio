@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
-// import Nav from '../Nav'
+import Nav from '../Nav2'
 import Home from '../Home'
 import Projects from '../Projects'
 import Resume from '../Resume'
@@ -12,18 +12,19 @@ const Routes = () => {
     
     return (
         <>
-            <Route path='/'
-                component={Home} 
-            /> 
-            <Route path='/projects'  
-                component={Projects} 
-            /> 
-            <Route path='/resume'  
-                component={Resume} 
-            /> 
-            <Route path='/contact'
-                component={Contact} 
-            />
+            <Nav />
+                <Route exact path='/'
+                    component={Home} 
+                /> 
+                <Route path='/projects'  
+                    component={Projects} 
+                /> 
+                <Route path='/resume'  
+                    component={Resume} 
+                /> 
+                <Route path='/contact'
+                    component={Contact} 
+                />
             
             {/* <Route path='/'  component={} />  */}
             {/* <Route path='/'  component={} />  */}

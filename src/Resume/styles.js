@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import img from './10-103265_digital-background-wallpaper-computer-fantasy.jpg'
 
 
 export const Main = styled.main`
@@ -10,6 +11,7 @@ export const Main = styled.main`
     font-family: 'Open Sans', sans-serif;
     font-size: 112.5%;
     line-height: 1.6em;
+    background-image: ${img}
 `
 export const Sect = styled.section`
     display: flex
@@ -17,6 +19,7 @@ export const Sect = styled.section`
 `
 
 export const Timeline = styled.section`
+
 
     .timeline {
         position: relative;
@@ -87,6 +90,7 @@ export const Timeline = styled.section`
         border-radius: 5px;
         
         font-weight: 600;
+        color: black;
         text-align: left;
     }
     
@@ -293,4 +297,8 @@ export const Timeline = styled.section`
     
     }
 
+`
+export const Footer = styled.footer`
+    height: 300px;
+    
 `

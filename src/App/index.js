@@ -4,7 +4,7 @@ import Routes from './routes'
 
 
 import { Main } from './styles'
-import Nav from '../Nav'
+// import Nav from '../Nav'
 
 const App = () => {
     
@@ -12,7 +12,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Main>
-                <Nav />
+                {/* <Nav /> */}
                 <Routes />
             </Main>
         </BrowserRouter>

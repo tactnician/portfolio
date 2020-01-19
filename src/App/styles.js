@@ -1,24 +1,28 @@
 
 import styled from 'styled-components'
+// import img from './10-103265_digital-background-wallpaper-computer-fantasy.jpg'
 
 export const Main = styled.main`
     display: flex; 
     flex-direction: row; 
-    #p1 { background: darkslateblue; }
-    #p2 { background: tomato; }
-    #p3 { background: gold; }
-    #p4 { background: deeppink; }
+    #p1 { background: #252F35; }
+    #p2 { background: #157460; }
+    #p3 { background: #134453; }
+    #p4 { background: #22818F; }
     #p5 { background: rebeccapurple; }
 
+
     .page {
-        width: 92vw;
-        height: 100vh;
+        background: #134453;
+        width: 100vw;
+        min-height: 100vh;
         margin: 0;
+        margin-left: 100px;
         padding: 0;
         color: #fff;
-        overflow: hidden; 
-        position: absolute;
-        left: 8vw;
+        // overflow: hidden; 
+        // position: relative;
+        // left: 8vw;
 
         opacity: 1;
         transition: opacity 5s;

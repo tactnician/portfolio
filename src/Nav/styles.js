@@ -14,6 +14,7 @@ export const NavBar = styled.nav`
     width: 8vw;
     height: 100vh;
     background-color: ${backgColor};
+    position: fixed;
 
     .icon {
         font-size: 32px;
@@ -25,6 +26,7 @@ export const NavBar = styled.nav`
 
     .icon:hover {
         opacity: 0.5;
+        font-size: 40px;
     }
         
 `

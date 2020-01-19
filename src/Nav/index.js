@@ -36,7 +36,7 @@ const Nav = () => {
                 // onClick = {setState({...state, setP2: true})}
                 to= {{
                     pathname: '/projects',
-                    state: { visable: true }
+                    state: { setP2: true }
                 }} 
             >
                 <FontAwesomeIcon icon = {faCode} className = 'icon'  />
