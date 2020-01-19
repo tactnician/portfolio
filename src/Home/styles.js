@@ -1,16 +1,29 @@
 import styled from 'styled-components'
 
 // let bgColor = 'darkslateblue'
+// import ghostShell from './img/ghostShell3D.jpg'
 
 export const Main = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    img {
+        z-index: -1;
+        min-width: 100vw;
+        min-height: 100vh;
+        position: fixed;
+    }
 `
 
 export const Headline = styled.div`
+    display: flex;
+    flex-direction: row;
+
     h1 {
+        display:flex;
+        flex-direction: row;
         color: white;
         font-size: 5vw;
         // text-transform: uppercase;

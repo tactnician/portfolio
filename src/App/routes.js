@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Route, Switch } from "react-router-dom";
 
 import Nav from '../Nav2'
+
 import Home from '../Home'
 import Projects from '../Projects'
 import Resume from '../Resume'

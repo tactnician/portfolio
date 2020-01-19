@@ -13,8 +13,11 @@ import {
     faSkull,
 } from "@fortawesome/free-solid-svg-icons";
 
+// import laughingMan from './img/laughingMan.gif'
+
 import {makeStyles} from '@material-ui/core/styles'
 import {
+    Avatar,
     Tabs,
     Tab,
     Typography,
@@ -25,6 +28,7 @@ import {
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
+        flexDirection: 'column',
         backgroundColor: 'black',
         display: 'flex',
         justifyContent: 'center',
@@ -46,6 +50,11 @@ const useStyles = makeStyles(theme => ({
         fontSize: '35px',
         margin: '15px',
         color: 'white'
+    },
+    avatar: {
+        justifySelf: 'flex-start',
+        width: 70,
+        height: 70
     }
 }))
 
@@ -53,6 +62,7 @@ const Nav = () => {
     const classes = useStyles()
     return (
     <div className={classes.root}>
+        {/* <Avatar alt="@Tactnician" src={laughingMan} className={classes.avatar} /> */}
         <Tabs
         orientation="vertical"
         variant="scrollable"

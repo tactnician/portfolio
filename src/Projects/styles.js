@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const Main = styled.main`
     display: flex; 
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 5px;
 
@@ -19,8 +20,38 @@ export const Main = styled.main`
     // font-family: 'Open Sans', sans-serif;
     // font-size: 112.5%;
     // line-height: 1.6em;
-
 `
+
+export const Headline = styled.div`
+    h1 {
+        color: white;
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: 1.9em dotted #CE6093;
+        white-space: nowrap;
+        // margin: 0 auto;
+        padding: 1vh;
+        letter-spacing: .15em;
+        animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end;
+    }
+    
+    /* Typewriter */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    /* Cursor */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #CE6093 }
+    }
+`
+
 export const useStyles = makeStyles(
     {
         root: {

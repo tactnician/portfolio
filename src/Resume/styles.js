@@ -3,6 +3,10 @@ import img from './10-103265_digital-background-wallpaper-computer-fantasy.jpg'
 
 
 export const Main = styled.main`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     background: rgb(230,230,230);
@@ -13,8 +17,39 @@ export const Main = styled.main`
     line-height: 1.6em;
     background-image: ${img}
 `
+
+export const Headline = styled.div`
+    h1 {
+        color: white;
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: 1.9em dotted #CE6093;
+        white-space: nowrap;
+        // margin: 0 auto;
+        padding: 1vh;
+        letter-spacing: .15em;
+        animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end;
+    }
+    
+    /* Typewriter */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    /* Cursor */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #CE6093 }
+    }
+`
+
 export const Sect = styled.section`
-    display: flex
+    display: flex;
     height: 30vh
 `
 

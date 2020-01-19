@@ -4,7 +4,6 @@ import Routes from './routes'
 
 
 import { Main } from './styles'
-// import Nav from '../Nav'
 
 const App = () => {
     
@@ -12,7 +11,6 @@ const App = () => {
     return (
         <BrowserRouter>
             <Main>
-                {/* <Nav /> */}
                 <Routes />
             </Main>
         </BrowserRouter>

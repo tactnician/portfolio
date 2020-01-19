@@ -1,19 +1,30 @@
 
 import styled from 'styled-components'
 // import img from './10-103265_digital-background-wallpaper-computer-fantasy.jpg'
+// import ghostShell from './ghostShell3D.jpg'
 
 export const Main = styled.main`
     display: flex; 
     flex-direction: row; 
-    #p1 { background: #252F35; }
-    #p2 { background: #157460; }
-    #p3 { background: #134453; }
-    #p4 { background: #22818F; }
-    #p5 { background: rebeccapurple; }
+    left:0;
+    
+    // background-image: url('./ghostShell3D.jpg');
+    // height: 100vh; /* You must set a specified height */
+    // background-position: center; /* Center the image */
+    // background-repeat: no-repeat; /* Do not repeat the image */
+    // background-size: cover; /* Resize the background image to cover the entire container */
+    
+    // #p1 { background: #252F35; }
+    // #p2 { background: #157460; }
+    // #p3 { background: #134453; }
+    // #p4 { background: #22818F; }
+    // #p5 { background: rebeccapurple; }
+
 
 
     .page {
-        background: #134453;
+        background: #252F35;
+        left: 0;
         width: 100vw;
         min-height: 100vh;
         margin: 0;

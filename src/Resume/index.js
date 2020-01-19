@@ -1,15 +1,17 @@
 import React from 'react'
 import { 
     Main, 
+    Headline,
     Timeline, 
-    Sect, 
     Footer 
 } from "./styles";
 
 const Resume = () => {
     return (
         <Main className='page' id='p3'>
-            {/* <Sect /> */}
+            <Headline className='headline' >
+                <h1>Resume</h1>
+            </Headline>
             <Timeline>
             <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css' />
                 <ul class="timeline">
