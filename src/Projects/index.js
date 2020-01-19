@@ -1,5 +1,8 @@
 import React from 'react'
-import Nav from '../Nav'
+import firewatch from './img/WildFireWatch.png'
+import griipeImg from './img/griipeHome.png'
+import delpheImg from './img/delpheHome.png'
+import marketImg from './img/marketOrg.png'
 
 import { 
     Grid,
@@ -29,9 +32,9 @@ const Projects = () => {
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
-                                alt="Contemplative Reptile"
-                                height="140"
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                alt="wildfire watch app img"
+                                height="200"
+                                image={firewatch}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -60,8 +63,39 @@ const Projects = () => {
                                 <CardMedia
                                 component="img"
                                 alt="Contemplative Reptile"
-                                height="140"
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                height="200"
+                                image={griipeImg}
+                                title="Contemplative Reptile"
+                                src='https://www.youtube.com/embed/2i5XD00Dazw'
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Lizard
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                                        across all continents except Antarctica
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary">
+                                    Share
+                                </Button>
+                                <Button size="small" color="primary">
+                                    Learn More
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+                    <Grid item xs>
+                        <Card className={classes.card}>
+                            <CardActionArea>
+                                <CardMedia
+                                component="iframe"
+                                alt="Contemplative Reptile"
+                                height="200"
+                                image={delpheImg}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -90,8 +124,8 @@ const Projects = () => {
                                 <CardMedia
                                 component="img"
                                 alt="Contemplative Reptile"
-                                height="140"
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                height="200"
+                                image={marketImg}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -120,7 +154,7 @@ const Projects = () => {
                                 <CardMedia
                                 component="img"
                                 alt="Contemplative Reptile"
-                                height="140"
+                                height="200"
                                 image="/static/images/cards/contemplative-reptile.jpg"
                                 title="Contemplative Reptile"
                                 />
@@ -144,38 +178,6 @@ const Projects = () => {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs>
-                        <Card className={classes.card}>
-                            <CardActionArea>
-                                <CardMedia
-                                component="img"
-                                alt="Contemplative Reptile"
-                                height="140"
-                                image="/static/images/cards/contemplative-reptile.jpg"
-                                title="Contemplative Reptile"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Lizard
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                        across all continents except Antarctica
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
-                                </Button>
-                                <Button size="small" color="primary">
-                                    Learn More
-                                </Button>
-                            </CardActions>
-                        </Card>
-                    </Grid>
-                
-                
                 </Grid>
             </div>
         </Main>
