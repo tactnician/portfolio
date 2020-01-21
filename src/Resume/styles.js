@@ -21,6 +21,7 @@ export const Main = styled.main`
 export const Headline = styled.div`
     h1 {
         color: white;
+        height: 5vh;
         font-size: 5vw;
         text-transform: uppercase;
         font-family: monospace;
