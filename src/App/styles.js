@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export const Main = styled.main`
     display: flex; 
     flex-direction: row; 
-    left:0;
+    // left:0;
     
     // background-image: url('./ghostShell3D.jpg');
     // height: 100vh; /* You must set a specified height */

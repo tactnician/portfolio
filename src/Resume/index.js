@@ -24,9 +24,13 @@ const Resume = () => {
                                 <span class="time-wrapper"><span class="time">05/19 - 11/19</span></span>
                             </div>
                             <div class="desc">
+                                <h3>Lead Product Teams for Lamda Labs In-house Internship</h3>
                                 <ul>
-                                    <li>Lead Product Teams for Lamda Labs In-house Internship</li>
-                                    <li>List Item Test</li>
+                                    <li>Managed remote project teams</li>
+                                    <li>Lead Agile ceremonies</li>
+                                    <li>Deployed cloud infrastructure</li>
+                                    <li>Ensured proper git workflow</li>
+                                    <li>Update Product Vision and documentation</li>
                                 </ul>
                             </div>
                         </div>
@@ -36,12 +40,18 @@ const Resume = () => {
                     <li>
                         <div class="direction-l">
                             <div class="flag-wrapper">
-                                <span class="flag">Teaching Assistant @ Lambda School.</span>
-                                <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+                                <span class="flag">Teaching Assistant @ Lambda School</span>
+                                <span class="time-wrapper"><span class="time">06/19 - Present </span></span>
                             </div>
                             <div class="desc">
-                                <li></li>
-                                <li></li>
+                                <h3>Instruct Students on Web Development Fundamentals</h3>
+                                <ul>
+                                    <li>Teach Html Javascript and CSS</li>
+                                    <li>Host live nightly training sessions</li>
+                                    <li>Assist students with coding errors</li>
+                                    <li>Create additional learning content</li>
+                                    {/* <li></li> */}
+                                </ul>
                             </div>
                         </div>
                     </li>
@@ -50,12 +60,17 @@ const Resume = () => {
                     <li>
                         <div class="direction-r">
                             <div class="flag-wrapper">
-                                <span class="flag">Harvard University</span>
+                                <span class="flag">Technician @ NBV Resorts</span>
                                 <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
                             </div>
                             <div class="desc">
-                                <li>list item test</li>
-                                <li>list item test</li>
+                                <h3>Maintained Wireless Mesh Network for North Beach Village Resorts</h3>
+                                <ul>
+                                    <li>Managed Unifi network controller</li>
+                                    <li>Managed Wireless Access Points over 1.5 sq miles</li>
+                                    <li>Troubleshoot Hardwired Connections</li>
+                                    <li>Responded to end-user hardware and connectivity issues</li>
+                                </ul>
                             </div>
                         </div>
                     </li>
@@ -64,13 +79,52 @@ const Resume = () => {
                     <li>
                         <div class="direction-l">
                             <div class="flag-wrapper">
-                                <span class="flag">Harvard University</span>
-                                <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+                                <span class="flag">LV Electrican @ American Security</span>
+                                <span class="time-wrapper"><span class="time">2018</span></span>
                             </div>
-                            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                            <div class="desc">
+                                <h3>Installation and Troubleshooting of Low Voltage Electrical Systems</h3>
+                                <ul>
+                                    <li>Lead installation teams</li>
+                                    <li>Structured cableing installation for commercial systems</li>
+                                    <li>Network infrastructure maintainance</li>
+                                    <li>Access Controls, CCTV and Alarm System intallation</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Bike Messenger @ Uber NYC</span>
+                                <span class="time-wrapper"><span class="time">2014 - 2016</span></span>
+                            </div>
+                            <div class="desc">
+                                Delivered packages and food throughout NYC
+                                <ul>
+                                    <li>Maintained a 4.8 rating</li>
+                                    <li>Became proficient at fixed gear cycling</li>
+                                    <li>Averaged 50-80 miles daily</li>
+                                    <li>Learned bicycle repair and maintenace</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">LV Electrican @ Various</span>
+                                <span class="time-wrapper"><span class="time">2003 - 2014</span></span>
+                            </div>
+                            <div class="desc">
+                                <h3>Tem plus years installing low voltage electrial systems</h3>
+                                <ul>
+                                    <li>See above description</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </Timeline>
             {/* <Footer>

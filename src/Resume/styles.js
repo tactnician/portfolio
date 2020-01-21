@@ -28,6 +28,7 @@ export const Headline = styled.div`
         border-right: 1.9em dotted #CE6093;
         white-space: nowrap;
         // margin: 0 auto;
+        // margin-top: 1vh ;
         padding: 1vh;
         letter-spacing: .15em;
         animation: 
@@ -226,7 +227,7 @@ export const Timeline = styled.section`
     
     /* ================ Timeline Media Queries ================ */
     
-    @media screen and (max-width: 660px) {
+    @media screen and (max-width: 768px) {
     
     .timeline {
         width: 100%;
@@ -304,7 +305,7 @@ export const Timeline = styled.section`
         position: relative;
         margin: 1em 0 0 0;
         padding: 1em;
-        background: rgb(245,245,245);
+        background: black; //rgb(245,245,245);
         -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
         -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
         box-shadow: 0 0 1px rgba(0,0,0,0.20);
